@@ -13,23 +13,9 @@
 
 ### 3) preview
 
-<div style="display: flex;">
-    <div style="flex: 50%">
-        <img src="/register.png" alt="REgister"/>
-    </div>
-    <div style="flex: 50%">
-        <img src="/room-list.png"  alt="REgister"/>
-    </div>
-</div>
-
-<div style="display: flex;">
-    <div style="flex: 50%">
-        <img src="/room.png" alt="REgister"/>
-    </div>
-    <div style="flex: 50%">
-        <span></span>
-    </div>
-</div>
+|![register](/register.png)|![room-list](/room-list.png)|
+|---|---|
+|![room](/room.png)| |
 
 
 

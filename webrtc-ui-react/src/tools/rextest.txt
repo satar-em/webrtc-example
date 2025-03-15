@@ -1,0 +1,37 @@
+  /*const myDefer = defer(() => new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Admad")
+                //reject("ican do it :")
+            }, 5000)
+        })).pipe(catchError((err, caught) => {
+            throw err
+        }))
+
+        myDefer.subscribe({
+            next: value => {
+                console.log("*salam 1*", value)
+            },
+            error: err => {
+                console.log("*salam 1* err", err)
+            }
+        })
+        myDefer.subscribe({
+            next: value => {
+                console.log("*salam 2*", value)
+            },
+            error: err => {
+                console.log("*salam 2* err", err)
+            }
+        })*/
+        const mySubject1 = new Subject()
+        mySubject1.subscribe(value => {
+            console.log({value1: value})
+        })
+        mySubject1.next("ali")
+        mySubject1.next("mohammad")
+        mySubject1.next("javad")
+        mySubject1.subscribe(value => {
+            console.log({value2: value})
+        })
+        mySubject1.next("hasan")
+        mySubject1.next("Satar")

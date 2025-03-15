@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+    --animate-emamiAnimate2: emamiAnimate2 5s ease-in-out 500ms infinite alternate-reverse;
+    @keyframes emamiAnimate2 {
+        0% {
+        }
+        25% {
+        }
+        50% {
+        }
+        75% {
+        }
+        100% {
+        }
+    }
+}

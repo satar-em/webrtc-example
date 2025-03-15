@@ -1,0 +1,15 @@
+<single-animation>#
+  <single-animation> = <time [0s,∞]> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ]
+  <easing-function> = linear | <linear-easing-function> | <cubic-bezier-easing-function> | <step-easing-function>
+  <single-animation-iteration-count> = infinite | <number [0,∞]>
+  <single-animation-direction> = normal | reverse | alternate | alternate-reverse
+  <single-animation-fill-mode> = none | forwards | backwards | both
+  <single-animation-play-state> = running | paused
+  <keyframes-name> = <custom-ident> | <string>
+  <linear-easing-function> = linear( <linear-stop-list> )
+  <cubic-bezier-easing-function> = ease | ease-in | ease-out | ease-in-out | cubic-bezier( <number [0,1]> , <number> , <number [0,1]> , <number> )
+  <step-easing-function> = step-start | step-end | steps( <integer> , <step-position>? )
+  <linear-stop-list> = [ <linear-stop> ]#
+  <step-position> = jump-start | jump-end | jump-none | jump-both | start | end
+  <linear-stop> = <number> &&<linear-stop-length>?
+  <linear-stop-length> = <percentage>{1,2}
